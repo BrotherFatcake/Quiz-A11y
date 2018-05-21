@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="DescriptionGoesHere" />
+
+    <!-- Responsive viewport tag, tells small screens that it's responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Quiz App - Tyler Brown</title>
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <!-- fonts  -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <!-- reset -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+
+    <!-- styles -->
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link href="grid_v2.css" rel="stylesheet" type="text/css" />
+
+
+
+  </head>
+
+  <body>
+    <header>
+        <img src="https://cff2.earth.com/uploads/2016/10/03153657/tornado-supercell-evening-stock.jpg" class="bg" alt="background-image"/>
+    </header>
+
+    <nav class="col-12 navBar js-navBar">
+
+      <h1 class="quizTitle js-quizTitle">Tornado Quiz</h1>
+
+    </nav>
+    <main role="main">
+
+        <div class="row quizAppRow">
+
+          <div class="cols-12 quizAppContainer">
+
+            <div class=" quizApp js-quizApp">
+
+              <div class="scoreContainer js-scoreContainer hidden">
+
+              </div>
+
+              <div class="quizAppPic js-quizAppPic">
+              <!--  <img class="quizAppImg js-quizAppImg" src="https://bit.ly/2JMZlgL" /> -->
+                <span>How much do you know about tornadoes!?!</span>
+                </div>
+                <form id="js-continue" role="form" class="clickToContinue js-clickToContinue">
+                  <fieldset name="Tornado Quiz App">
+                    <legend>Tornado Quiz App</legend>
+                    <button type="submit"  class="mt20 continue js-continue">Click to continue</button>
+                  </fieldset>
+                </form>
+
+            </div>
+
+          </div>
+
+          <div>
+            <form id="js-quizForm" role="form">
+              <fieldset name="Quiz questions and Answers">
+                <legend>Tornado questions and Answers</legend>
+              <div class="quizAppQs js-quizAppQs hidden">
+                <!---This is where the questions will appear -->
+              </div>
+              <div class="answerButtonContainer js-answerButtonContainer hidden" role="radiogroup">
+                <!---This is where the answers will appear -->
+              </div>
+
+              </fieldset>
+            </form>
+          </div>
+        </div>
+
+      </main>
+
+  </body>
+
+  <script src="index.js" type="text/javascript"></script>
+
+</html>
